@@ -25,9 +25,12 @@ router.post('/update-password', authenticateToken, async (req, res) => {
             return res.status(401).json({ success: false, message: 'Old password is incorrect' });
         }
 
+<<<<<<< HEAD
         // Update user's password
 	   /* await User.findOneAndUpdate({ username }, { password: newPassword });
 
+=======
+>>>>>>> 33f1fa0d0ec003121dba38041e664ad1484f40ad
         // Send success response
         return res.status(200).json({ success: true, message: 'Password updated successfully' });
     } catch (error) {
