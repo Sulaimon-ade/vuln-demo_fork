@@ -26,7 +26,7 @@ router.post('/update-password', authenticateToken, async (req, res) => {
         }
 
         // Update user's password
-        await User.findOneAndUpdate({ username }, { password: newPassword });
+	   /* await User.findOneAndUpdate({ username }, { password: newPassword });
 
         // Send success response
         return res.status(200).json({ success: true, message: 'Password updated successfully' });
@@ -37,4 +37,4 @@ router.post('/update-password', authenticateToken, async (req, res) => {
     }
 });
 
-module.exports = router;
+module.exports = router;*/
